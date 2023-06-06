@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2023 Fantasy Football</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <img src="NFL_logo.png" alt="NFL" class="logo">
+    <img src="fantasy_logo.png" alt="Fantasy" class="logo2">
+
+    <header>
+      <h1>2023 Fantasy Football</h1>
+    </header>
+
+    <main>
+      <p class="title">Fantasy Football | Machine Learning | Data Analytics</p>
+
+      <div class="button-container">
+        <button onclick="window.open('Prediction2023.csv')">Upload Prediction CSV</button>
+        <button onclick="window.open('https://github.com/bkeuthan')">View GitHub Page</button>
+        <button onclick="window.open('https://colab.research.google.com/drive/1L0qwstTNehF2eFZeqpUSEcdFl0mGoQxp?usp=sharing#scrollTo=h6mBED55fnqC')">View Google Colab</button>
+      </div>
+
+      <h1 class="centered-h1">Player Search</h1>
+
+      <div class="search-form" id="search">
+        <form>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" placeholder="Input">
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" placeholder="Input">
+        </form>
+        <button id="submit-rankings">Search</button>
+      </div>
+
+      <div id="player-info-container" class="response hidden">
+        <table id="player-info-table"></table>
+      </div>
+      
+      
+      
+      <h1 class="centered-h1">Positional Rankings</h1>
+
+      <div class="button-container">
+        <button class="my-button" id="quarterback">Quarterback</button>
+        <button class="my-button" id="runningback">Running Back</button>
+        <button class="my-button" id="widereceiver">Wide Receiver</button>
+        <button class="my-button" id="tightend">Tight End</button>
+        <button class="my-button" id="overall">Overall</button>
+      </div>
+
+      <div id="response-container" class="response hidden"></div>
+
+      <p class="title">Click below for a summary of how the machine learning algorithm was designed:</p>
+
+      <div class="button-container">
+        <button class="about" id="about">About</button>
+      </div>
+      <div id="about-response" class="response hidden"></div>
+    </main>
+
+    <script src="logic.js"></script>
+    <footer>
+      <p>University of Central Florida</p>
+      <p>Data Analytics & Visualization Bootcamp</p>
+      <p>Patrick Bush | Christian Hernandez | Brian Keuthan</p>
+    </footer>
+
+  </body>
+</html>
